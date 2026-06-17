@@ -1,0 +1,283 @@
+# gag2-trades
+This  syte helps you 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GAG2 Trader Hub - Find Roblox GAG2 Trades</title>
+<meta name="description" content="Find the best GAG2 Roblox trades, seeds, items, and pets. Contact nooob_pro52 for instant trading.">
+<meta name="keywords" content="GAG2, Roblox GAG2, GAG2 trading, Bamboo Seed, Dragon Breath, Roblox trades">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111827;
+    color:white;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+h1{
+    color:#22c55e;
+}
+
+.search-box{
+    max-width:500px;
+    margin:20px auto;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    background: #1f2937;
+    color: white;
+    border: 1px solid #374151;
+}
+
+.search-box input::placeholder {
+    color: #9ca3af;
+}
+
+.trades{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trade-card{
+    background:#1f2937;
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #374151;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trade-card h3{
+    color:#22c55e;
+    margin-bottom:10px;
+}
+
+.trade-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.trade-btn{
+    width:100%;
+    padding:10px;
+    margin-top:auto;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition: 0.2s;
+}
+
+.trade-btn:hover{
+    background: #16a34a;
+}
+
+.contact-box{
+    display:none;
+    margin-top:15px;
+    padding:15px;
+    background:#0f172a;
+    border-radius:10px;
+    text-align: center;
+}
+
+.username{
+    font-weight:bold;
+    color:#facc15;
+    margin: 5px 0 10px 0;
+    font-size: 18px;
+}
+
+.copy-btn{
+    background:#3b82f6 !important;
+    width:100%;
+    padding:8px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition: 0.2s;
+}
+
+.copy-btn:hover {
+    background: #2563eb !important;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🌱 GAG2 Trader Hub</h1>
+    <p>Find Trades & Contact Me</p>
+</header>
+
+<div class="search-box">
+    <input type="text" id="search" placeholder="Search items or seeds...">
+</div>
+
+<div class="trades" id="tradeContainer">
+
+    <div class="trade-card">
+        <div>
+            <h3>100 Bamboo Seed</h3>
+            <p>➡️ 5x Rainbow Seed</p>
+        </div>
+        <button class="trade-btn" onclick="showContact(this)">Trade Me</button>
+        <div class="contact-box">
+            Roblox User:
+            <div class="username">nooob_pro52</div>
+            <button class="copy-btn" onclick="copyUser(this)">Copy Username</button>
+        </div>
+    </div>
+
+    <div class="trade-card">
+        <div>
+            <h3>20 Bamboo Seed</h3>
+            <p>➡️ 1x Golden Seed (Stackable)</p>
+        </div>
+        <button class="trade-btn" onclick="showContact(this)">Trade Me</button>
+        <div class="contact-box">
+            Roblox User:
+            <div class="username">nooob_pro52</div>
+            <button class="copy-btn" onclick="copyUser(this)">Copy Username</button>
+        </div>
+    </div>
+
+    <div class="trade-card">
+        <div>
+            <h3>50 Bamboo Seed</h3>
+            <p>➡️ 1x Venus Fly Trap (4X)</p>
+        </div>
+        <button class="trade-btn" onclick="showContact(this)">Trade Me</button>
+        <div class="contact-box">
+            Roblox User:
+            <div class="username">nooob_pro52</div>
+            <button class="copy-btn" onclick="copyUser(this)">Copy Username</button>
+        </div>
+    </div>
+
+    <div class="trade-card">
+        <div>
+            <h3>60 Bamboo Seed</h3>
+            <p>➡️ 1x Dragon Breath</p>
+        </div>
+        <button class="trade-btn" onclick="showContact(this)">Trade Me</button>
+        <div class="contact-box">
+            Roblox User:
+            <div class="username">nooob_pro52</div>
+            <button class="copy-btn" onclick="copyUser(this)">Copy Username</button>
+        </div>
+    </div>
+
+    <div class="trade-card">
+        <div>
+            <h3>1 Mushroom</h3>
+            <p>➡️ 1x Rare Pet</p>
+        </div>
+        <button class="trade-btn" onclick="showContact(this)">Trade Me</button>
+        <div class="contact-box">
+            Roblox User:
+            <div class="username">nooob_pro52</div>
+            <button class="copy-btn" onclick="copyUser(this)">Copy Username</button>
+        </div>
+    </div>
+
+    <div class="trade-card">
+        <div>
+            <h3>5 Mushroom</h3>
+            <p>➡️ 1x Cherry</p>
+        </div>
+        <button class="trade-btn" onclick="showContact(this)">Trade Me</button>
+        <div class="contact-box">
+            Roblox User:
+            <div class="username">nooob_pro52</div>
+            <button class="copy-btn" onclick="copyUser(this)">Copy Username</button>
+        </div>
+    </div>
+
+    <div class="trade-card">
+        <div>
+            <h3>1 Legendary Pet</h3>
+            <p>➡️ 5x Dragon Breath</p>
+        </div>
+        <button class="trade-btn" onclick="showContact(this)">Trade Me</button>
+        <div class="contact-box">
+            Roblox User:
+            <div class="username">nooob_pro52</div>
+            <button class="copy-btn" onclick="copyUser(this)">Copy Username</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+// აჩვენებს კონტაქტის ბოქსს
+function showContact(button){
+    const box = button.parentElement.querySelector(".contact-box");
+    box.style.display = "block";
+    button.style.display = "none"; // მალავს "Trade Me" ღილაკს გახსნის შემდეგ
+}
+
+// აკეთებს კონკრეტული იუზერნეიმის კოპირებას დინამიურად
+function copyUser(button){
+    const usernameText = button.parentElement.querySelector(".username").innerText;
+    navigator.clipboard.writeText(usernameText);
+    
+    // ვიზუალური ეფექტი ალერტის ნაცვლად (უფრო ლამაზია)
+    const originalText = button.innerText;
+    button.innerText = "✓ Copied!";
+    button.style.background = "#22c55e";
+    
+    setTimeout(() => {
+        button.innerText = originalText;
+        button.style.background = "#3b82f6";
+    }, 2000);
+}
+
+// ძებნის ფუნქცია
+document.getElementById("search").addEventListener("keyup", function(){
+    let value = this.value.toLowerCase();
+    
+    document.querySelectorAll(".trade-card").forEach(card => {
+        // ეძებს მხოლოდ ტექსტში (იუზერნეიმის და კოპირების ტექსტის გარეშე)
+        let title = card.querySelector("h3").innerText.toLowerCase();
+        let desc = card.querySelector("p").innerText.toLowerCase();
+        
+        if(title.includes(value) || desc.includes(value)) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
